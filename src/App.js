@@ -11,7 +11,7 @@ function App() {
   const [color, setColor] = useState("rgb(0,0,0)")
   return (
     <div className="App">
-      <header className="App-header" style = {{ backgroundColor: color }} >
+      <header className="App-header">
         <img src={face} className="App-logo" alt="logo" />
         <p>
           Adam Zawierucha
@@ -33,6 +33,7 @@ function App() {
           Resume
         </a>
         <button onClick = { ()=>{ setColor("rgb(255,255,255)") }} > Change Color! </button>
+        <p style = {{ backgroundColor: color }} > {color} </p>
       </header>
     </div>
   );
